@@ -3,7 +3,8 @@
 
 echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 echo "@edgecommunity http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories; \
-apk update \
+apk update
+apk add \
     cmake \
     alpine-sdk \
     eigen-dev@edgecommunity \
