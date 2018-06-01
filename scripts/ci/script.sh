@@ -1,9 +1,9 @@
 #!/bin/sh -e
 # Builds and tests PDAL
 
-echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
 echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 echo "@edgecommunity http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories; \
+echo "@edgemain http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
 apk update
 apk add \
     cmake \
@@ -25,7 +25,7 @@ apk add \
     libgeotiff-dev \
     libxml2 \
     libxml2-dev \
-    libressl2.7-libcrypto \
+    libressl2.7-libcrypto@edgemain \
     python \
     python-dev \
     py-numpy \
