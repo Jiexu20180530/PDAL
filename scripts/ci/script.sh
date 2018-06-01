@@ -23,6 +23,7 @@ apk update
     libgeotiff-dev \
     libxml2 \
     libxml2-dev \
+    libressl2.7-libcrypto \
     python \
     python-dev \
     py-numpy \
