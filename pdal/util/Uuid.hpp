@@ -56,15 +56,17 @@
 
 #include <cstdint>
 #include <string>
+#include <iostream>
 
 #include "pdal_util_export.hpp"
 
 #include "Inserter.hpp"
 #include "Extractor.hpp"
 
+/**
 #pragma warning(push)
 #pragma warning(disable: 4267 4244)  // ignore conversion warnings
-
+**/
 
 namespace pdal
 {
@@ -232,5 +234,5 @@ inline std::istream& operator >> (std::istream& in, Uuid& u)
 
 } // namespace pdal
 
-#pragma warning(pop)
+//#pragma warning(pop)
 
