@@ -3,9 +3,9 @@
 #
 
 add_definitions(-DHAVE_JSONCPP=1)
-if (WIN32)
-add_definitions("-DARBITER_DLL_IMPORT")
-endif()
+#if (WIN32)
+#add_definitions("-DARBITER_DLL_IMPORT")
+#endif()
 
 #
 # Need Winsock for htonl
@@ -18,6 +18,7 @@ PDAL_ADD_PLUGIN(reader_libname reader greyhound
         io/GreyhoundCommon.cpp
         io/bounds.cpp
     LINK_WITH
+        ${PDAL_ARBITER_LIB_NAME}
         ${PDAL_JSONCPP_LIB_NAME}
         ${WINSOCK_LIBRARY}
 )
