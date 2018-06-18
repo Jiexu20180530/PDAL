@@ -27,7 +27,7 @@ if (UNIX)
     target_compile_options(${PDAL_ARBITER_LIB_NAME} PRIVATE "-fPIC")
 else()
     target_compile_definitions(${PDAL_ARBITER_LIB_NAME}
-        PUBLIC -DARBITER_DLL_EXPORT -DARBITER_CURL)
+        PUBLIC -DARBITER_CURL)
 endif()
 
 set_target_properties(${PDAL_ARBITER_LIB_NAME} PROPERTIES

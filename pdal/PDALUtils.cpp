@@ -36,7 +36,7 @@
 #include <pdal/pdal_features.hpp>  // PDAL_ARBITER_ENABLED
 
 #ifdef PDAL_ARBITER_ENABLED
-    #include <arbiter/arbiter.hpp>
+    #include <arbiter/arbiter_pdal.hpp>
 #endif
 
 #include <pdal/KDIndex.hpp>

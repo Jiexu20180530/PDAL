@@ -37,7 +37,7 @@
 #include <pdal/pdal_features.hpp>
 #include <pdal/compression/LazPerfCompression.hpp>
 
-#include <arbiter/arbiter.hpp>
+#include <arbiter/arbiter_pdal.hpp>
 
 namespace pdal
 {

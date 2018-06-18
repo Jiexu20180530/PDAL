@@ -30,6 +30,8 @@ function(pdal_target_compile_settings target)
                 # Annoying warning about function hiding with virtual
                 # inheritance.
                 /wd4250
+                # Warning about unknown pragmas
+                /wd4068
                 )
         endif()
 

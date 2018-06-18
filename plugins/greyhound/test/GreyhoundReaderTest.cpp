@@ -40,7 +40,7 @@
 #include <pdal/StageFactory.hpp>
 #include <pdal/util/Algorithm.hpp>
 
-#include <arbiter/arbiter.hpp>
+#include <arbiter/arbiter_pdal.hpp>
 
 #include "Support.hpp"
 #include "../io/GreyhoundReader.hpp"

@@ -43,6 +43,9 @@
 #ifndef IMPORT_NITRO_API
 #define IMPORT_NITRO_API
 #endif
+
+#undef min
+#undef max
 #include <nitro/c++/import/nitf.hpp>
 #include "tre_plugins.hpp"
 

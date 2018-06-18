@@ -73,21 +73,21 @@ TEST(Stats, simple)
     EXPECT_EQ(statsY.count(), 1000u);
     EXPECT_EQ(statsZ.count(), 1000u);
 
-    EXPECT_FLOAT_EQ(statsX.minimum(), 1.0);
-    EXPECT_FLOAT_EQ(statsY.minimum(), 2.0);
-    EXPECT_FLOAT_EQ(statsZ.minimum(), 3.0);
+    EXPECT_FLOAT_EQ((float)statsX.minimum(), 1.0f);
+    EXPECT_FLOAT_EQ((float)statsY.minimum(), 2.0f);
+    EXPECT_FLOAT_EQ((float)statsZ.minimum(), 3.0f);
 
-    EXPECT_FLOAT_EQ(statsX.maximum(), 101.0);
-    EXPECT_FLOAT_EQ(statsY.maximum(), 102.0);
-    EXPECT_FLOAT_EQ(statsZ.maximum(), 103.0);
+    EXPECT_FLOAT_EQ((float)statsX.maximum(), 101.0f);
+    EXPECT_FLOAT_EQ((float)statsY.maximum(), 102.0f);
+    EXPECT_FLOAT_EQ((float)statsZ.maximum(), 103.0f);
 
-    EXPECT_FLOAT_EQ(statsX.average(), 51.0);
-    EXPECT_FLOAT_EQ(statsY.average(), 52.0);
-    EXPECT_FLOAT_EQ(statsZ.average(), 53.0);
+    EXPECT_FLOAT_EQ((float)statsX.average(), 51.0f);
+    EXPECT_FLOAT_EQ((float)statsY.average(), 52.0f);
+    EXPECT_FLOAT_EQ((float)statsZ.average(), 53.0f);
 
-    EXPECT_FLOAT_EQ(statsX.variance(), 837.09351);
-    EXPECT_FLOAT_EQ(statsY.variance(), 837.0965);
-    EXPECT_FLOAT_EQ(statsZ.variance(), 837.1015);
+    EXPECT_FLOAT_EQ((float)statsX.variance(), 837.09351f);
+    EXPECT_FLOAT_EQ((float)statsY.variance(), 837.0965f);
+    EXPECT_FLOAT_EQ((float)statsZ.variance(), 837.1015f);
 
     EXPECT_DOUBLE_EQ(statsX.skewness(), 0.0);
     EXPECT_DOUBLE_EQ(statsY.skewness(), 0.0);

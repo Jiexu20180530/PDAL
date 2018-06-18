@@ -45,6 +45,8 @@
 #pragma GCC diagnostic ignored "-Wextra"
 #pragma GCC diagnostic ignored "-Wcast-qual"
 #pragma GCC diagnostic ignored "-Wunused-private-field"
+#undef min
+#undef max
 
 #include <nitro/c++/import/nitf.hpp>
 
