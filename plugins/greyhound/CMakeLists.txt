@@ -2,10 +2,10 @@
 # Greyhound plugin CMake configuration
 #
 
-add_definitions(-DHAVE_JSONCPP=1)
-if (WIN32)
-add_definitions("-DARBITER_DLL_IMPORT")
-endif()
+#add_definitions(-DHAVE_JSONCPP=1)
+#if (WIN32)
+#add_definitions("-DARBITER_DLL_IMPORT")
+#endif()
 
 #
 # Need Winsock for htonl
