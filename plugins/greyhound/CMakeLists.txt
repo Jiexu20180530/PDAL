@@ -19,6 +19,7 @@ PDAL_ADD_PLUGIN(reader_libname reader greyhound
         io/bounds.cpp
     LINK_WITH
         ${PDAL_JSONCPP_LIB_NAME}
+        ${PDAL_ARBITER_LIB_NAME}
         ${WINSOCK_LIBRARY}
 )
 
